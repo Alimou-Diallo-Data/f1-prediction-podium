@@ -1,0 +1,41 @@
+{
+  "created_at": "2026-10-28T06:20:56.883032+00:00",
+  "selected": {
+    "win": "gradient_boosting",
+    "podium": "random_forest"
+  },
+  "train_seasons": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022
+  ],
+  "validation_season": 2023,
+  "test_season": 2024,
+  "training_rows": 2060,
+  "validation_rows": 440,
+  "excluded_label_rows": 0,
+  "feature_columns": [
+    "round",
+    "driver_history_n",
+    "driver_pos5",
+    "driver_points5",
+    "driver_win5",
+    "driver_podium5",
+    "team_history_n",
+    "team_points5",
+    "team_pos5",
+    "driver_id",
+    "constructor_id",
+    "circuit_id"
+  ],
+  "feature_sha256": "8f69658f8280116b323d45f3f068f5e687b88850b96b95921163210bac4fea40",
+  "sklearn": "1.9.1",
+  "python": "3.12.3",
+  "protocol": "before_qualifying; rolling previous 5 events; retrospective entrants; frozen model",
+  "targets": [
+    "win",
+    "podium"
+  ]
+}
